@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: "provisioning.k8s.dev.calvinverse.net"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          serviceName: provisioning-frontend
+          servicePort: 8080
