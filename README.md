@@ -1,2 +1,4 @@
 # bootstrap.meta
-Scripts to bootstrap the meta environment for Calvinverse
+
+The **bootstrap.meta** repository contains the configuration to bootstrap the
+[meta environment]() on different platforms.
